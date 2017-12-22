@@ -1,0 +1,71 @@
+<!--<view class="search">
+  <view class="search-input">
+    <text class="search-jd">TT</text>
+    <image class="search-icon" src="/image/ath.png" mode="aspectFit" />
+    <input class="search-text" placeholder="立式空调" />
+  </view>
+  <text class="login">登录</text>
+</view>-->
+<view class="search">
+        <view class="scan">
+            <image class="widgets-img" src="/image/ai3.png" mode="aspectFit" />
+        </view>
+        <view class="search-input">
+            <image class="search-icon" src="/image/ath.png" mode="aspectFit" />
+            <input class="serach-text" placeholder="搜索商品" />
+        </view>
+        <view class="scan">
+            <image class="widgets-img" src="/image/ahv.png" mode="aspectFit" />
+        </view>
+    </view>
+<swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item wx:for="{{swipers}}" wx:key="{{index}}">
+    <image class="swiper-item" src="{{item.image}}" mode="aspectFill" />
+  </swiper-item>
+</swiper>
+
+<view class="big-logo">
+  <view class="logoinfo" wx:for="{{logos}}" wx:key="{{index}}">
+    <image class="logoimg" src="{{item.image}}" mode="aspectFit" />
+    <text class="logotext">{{item.title}}</text>
+  </view>
+</view>
+
+<view class="seckill">
+  <image style="width:180rpx;height:40rpx;margin-left:24rpx;" src="/image/bej.png" mode="aspectFit" />
+  <view style="flex-grow:1"></view>
+  <text style="margin-right: 2px; font-size:24rpx;color:#666;">更多秒杀</text>
+  <image style="width: 22rpx; height:22rpx;margin-right:24rpx;" src="/image/arrowright.png" mode="aspectFit" />
+</view>
+
+<scroll-view scroll-x="true" style="width:750rpx; white-space: nowrap;">
+  <view style="display: inline-block;" wx:for="{{quicks}}" wx:key="{{index}}">
+    <view style="padding:20rpx;display:flex;flex-direction:column;align-items:center" bindtap="toGoods">
+      <image style="width:170rpx;height:170rpx;" src="{{item.image}}" mode="aspectFill" />
+      <text style="font-size:32rpx;color:#FF0000; margin-top:10rpx;">{{item.price}}</text>
+      <text style="font-size:24rpx;color:#666;text-decoration: line-through;">{{item.price2}}</text>
+    </view>
+  </view>
+</scroll-view>
+
+<image style="width:750rpx;height:185rpx;" src="/image/newUser.jpg" mode="aspectFit" />
+
+<view class="live" style="position:relative;">
+  <image class="live" src="/image/floor-tit.png" mode="scaleToFill" />
+  <view class="liveinner">
+    <image style="height:56rpx;width:133rpx;" src="/image/live.jpg" />
+  </view>
+</view>
+
+<view class="flex-row flex-wrap" style="width:702rpx;margin:10rpx 24rpx 0 24rpx;">
+  <view class="liveitem flex-row" wx:for="{{live}}" wx:key="{{index}}">
+    <view class="flex-column flex-1" style="margin-top:10rpx;justify-content: flex-start;">
+      <text style="font-size:32rpx;color:#333">{{item.title1}}</text>
+      <text style="font-size:24rpx;color:#666">{{item.title2}}</text>
+      <text style="font-size:24rpx;color:#fff;background:#ff4a7d;">{{item.title3}}</text>
+    </view>
+    <view class="flex-row flex-center" style="height:185rpx;margin:auto 48rpx auto 10rpx;">
+      <image style="width:150rpx;height:172rpx;" src="{{item.image}}" />
+    </view>
+  </view>
+</view>

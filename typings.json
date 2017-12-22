@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "we-app": "registry:env/we-app#1.0.0+20170403180231"
+  }
+}

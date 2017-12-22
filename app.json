@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "page/home/index",
+    "page/category/index",
+    "page/explore/index",
+    "page/me/index",
+    "page/goods/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "淘淘",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "red",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh":false
+  },
+  "tabBar": {
+    "color": "#5d5f6a",
+    "selectedColor": "#f23030",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text":"推荐",
+        "pagePath": "page/home/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-hl.png"
+      },
+      {
+         "text":"分类",
+        "pagePath": "page/category/index",
+        "iconPath": "image/category.png",
+        "selectedIconPath": "image/category-hl.png"
+      },
+      {
+         "text":"发现",
+        "pagePath": "page/explore/index",
+        "iconPath": "image/explore.png",
+        "selectedIconPath": "image/explore-hl.png"
+      },
+      {
+         "text":"我的",
+        "pagePath": "page/me/index",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me-hl.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

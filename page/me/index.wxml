@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="inputBox flex-row flex-center">
+        <text>账号</text>
+        <input  value="{{user}}" placeholder="用户名/邮箱/已验证手机" placeholder-style="color:#eee"/>
+        <image src="/image/clear.png" mode="aspectFit" />
+    </view>
+        <view class="inputBox flex-row flex-center">
+        <text>密码</text>
+        <input  password value="{{passwd}}" placeholder="请输入密码" placeholder-style="color:#eee"/>
+        <image src="/image/clear.png" mode="aspectFit" />
+    </view>
+<button type="primary" > 登录 </button>
+</view>
